@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ServersComponent } from "./server/server.component";
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule
@@ -15,4 +17,5 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+//Kind of like the controller...one level higher than components...there can be multiple modules
 export class AppModule { }
